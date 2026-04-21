@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewpoint" content="width=device-width, initial-scale=1">
+<title>Афиша | FREQØUT</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap" rel="stylesheet">
+<link href="https://fonts.google.com/specimen/Roboto" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style2.css">
+</head>
+
+<body>
+
+<div class="container">
+
+   <header class="header">
+        <nav class="menu">
+            <a href="index.html">ГЛАВНАЯ</a>
+            <a href="afisha.html">АФИША</a>
+            <a href="o-klube.html">О КЛУБЕ</a>
+            <a href="#">МЕРЧ</a>
+            <a href="#">КОНТАКТЫ</a>
+        </nav>
+
+        <div class="logo-text">FREQØUT</div>
+    </header>
+
+    <div class="afisha-title">ТУСОВКИ</div>
+
+    <div class="carousel">
+        <div class="arrow" onclick="move(-1)">←</div>
+
+        <div class="carousel-track" id="track">
+            <div class="card" onclick="openModal()">
+    <img src="img/afisha1.png" alt="афиша">
+</div>
+
+<div class="card">
+    <img src="img/afisha2.png" alt="афиша">
+</div>
+			
+<div class="card" data-bs-toggle="modal" data-bs-target="#afishaModal">
+    <img src="img/afisha3.png" alt="афиша">
+</div>
+			
+<div class="modal fade" id="afishaModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    
+    <div class="modal-content bg-black text-white">	
+	<img src="img/afisha3.png" class="w-100" alt="афиша">
+	
+	<div class="p-4 text-center" style="font-size:32px;">
+		МЫ ЗНАЕМ, ЧТО СРЕДИ ВАС ЕСТЬ ЛЮБИТЕЛИ ТЕОРИЙ ЗАГОВОРОВ. А ЕЩЕ МЫ ЗНАЕМ, ЧТО РЕПТИЛОИДЫ ХОДЯТ СРЕДИ НАС. ЭТОЙ НОЧЬЮ МЫ СОСУЩЕСТВУЕМ.
+24/10/25
+	</div>
+	
+	<div class="text-center pb-4">
+        <button class="btn btn-outline-light" style="font-size:64px;">
+          КУПИТЬ БИЛЕТ
+        </button>
+    </div>
+</div>
+
+  </div>
+</div>	
+			
+<div class="card">
+    <img src="img/afisha3.png" alt="афиша">
+</div>
+
+<div class="card">
+    <img src="img/afisha4.png" alt="афиша">
+</div>
+        </div>
+
+        <div class="arrow" onclick="move(1)">→</div>
+    </div>
+
+    <div class="big-text1">
+        ОТКРОЙ ДЛЯ СЕБЯ МИР РЕЙВА
+    </div>
+
+    <div class="big-text2">
+        СТАНЬ ЧАСТЬЮ
+    </div>
+
+    <footer class="footer">
+        <div class="footer-logo">FREQØUT</div>
+
+            <div class="socials">
+               <div>TG</div>
+               <div>VK</div>
+               <div>INST</div>
+</div>
+
+        <div class="copyright">
+            © 2025 Design by Bulasheva Vladislava. All rights reserved.
+        </div>
+    </footer>
+
+</div>
+
+
+<script src="js/slider.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<div class="modal" id="modal">
+    <div class="modal-content">
+
+        <img src="img/afisha1.png" alt="афиша" class="modal-img">
+
+        <div class="modal-text">
+            Тусовка для ваших внутренних зомбаков, которым не терпится отведать свежего мясца. 
+            Выпусти внутреннего зверя, позволь расствориться твоему сознанию в алом свете. 10/10/25.
+        </div>
+
+        <button class="buy-btn">КУПИТЬ БИЛЕТ</button>
+
+    </div>
+</div>
+</body>
+</html>
